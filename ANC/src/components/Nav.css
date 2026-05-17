@@ -1,0 +1,74 @@
+#Asshole {
+    justify-content: left;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* #Name {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#Age {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#Gender {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#Class {
+    font-size: larger;
+    font-weight: bolder;
+}
+
+#asshole {
+    display: flex;
+    justify-content: space-between;
+} */
+
+d {
+    color: gold;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 40px;
+    color: gold
+}
+
+button {
+    background-color: gold;
+    padding: 15px 40px;
+    border-radius: 18px;
+    color: red;
+    cursor: pointer;
+    font-weight: bolder;
+    border:none;
+    font-size: larger;
+    /* Add a shadow to make it pop */
+  box-shadow: 5px 5px 5px rgb(8, 132, 8);
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+button:hover {
+    background-color: rgb(16, 160, 16);
+    cursor: pointer;
+    color: purple;
+    box-shadow: 5px 5px 5px rgb(9, 163, 111);
+}
+
+#Nicholas {
+    background-color: rgb(9, 2, 125);
+}
+
+p {
+    font-weight: smaller;
+    
+}
