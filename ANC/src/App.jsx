@@ -1,6 +1,7 @@
 import Nav from "./components/Nav";
 import Form from "./components/Form";
 import {form} from "./components/Form";
+import IDCard from "./components/IDCard"
 import "./app.css";
 
 function App() {
@@ -15,18 +16,12 @@ function App() {
       />
       <Form
         Name="Chidubem Nicholas Akaogu"
-        Age="11"
+        Age={11}
         Height="5.3"
         Weight="53"
         SCHOOL="Kapna International"
         />
-      <form
-        name="chukwuma michael akaogu"
-        age="13"
-        height="5.6"
-        weight="66"
-        School="Kapna International"
-      />
+      <IDCard/>
     </div>
   )
 }

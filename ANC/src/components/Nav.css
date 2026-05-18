@@ -2,10 +2,10 @@
     justify-content: left;
     display: flex;
     justify-content: space-between;
-    
+
 }
 
-/* #Name {
+#Name {
     font-size: larger;
     font-weight: bolder;
 }
@@ -28,7 +28,7 @@
 #asshole {
     display: flex;
     justify-content: space-between;
-} */
+}
 
 d {
     color: gold;
@@ -38,30 +38,32 @@ d {
 
 h2 {
     font-weight: bolder;
-    font-size: 40px;
-    color: gold
+    font-size: 20px;
+    color: gold;
+    text-transform: uppercase;
 }
 
 button {
     background-color: gold;
-    padding: 15px 40px;
-    border-radius: 18px;
-    color: red;
+    padding: 7.5px 20px;
+    border-radius: 9px;
+    color: darkblue;
     cursor: pointer;
     font-weight: bolder;
-    border:none;
+    border: none;
     font-size: larger;
     /* Add a shadow to make it pop */
-  box-shadow: 5px 5px 5px rgb(8, 132, 8);
-  cursor: pointer;
-  transition: all 0.1s ease;
+    box-shadow: 3px 3px 3px 3px goldenrod;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    sink: 8px;
 }
 
 button:hover {
-    background-color: rgb(16, 160, 16);
+    background-color: darkgoldenrod;
     cursor: pointer;
-    color: purple;
-    box-shadow: 5px 5px 5px rgb(9, 163, 111);
+    color: navy;
+    box-shadow: 3px 3px 3px 3px darkblue;
 }
 
 #Nicholas {
@@ -70,5 +72,14 @@ button:hover {
 
 p {
     font-weight: smaller;
-    
+}
+
+input {
+    padding: 7.5px 20px;
+    border-radius: 9px;
+    border: none;
+    font-size: larger;
+    transition: all 0.1s ease;
+    background-color: gold;
+    width: 400px;
 }

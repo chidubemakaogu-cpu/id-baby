@@ -1,0 +1,123 @@
+.dashboardBody {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 360px;
+    box-sizing: border-box;
+}
+
+.formGroup {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+.btnCreate {
+    background-color: #28a745;
+    color: white;
+    font-size: 8px;
+}
+
+.btnUpdate {
+    background-color: #007bff;
+    color: white;
+    font-size: 8px;
+}
+
+.btnCancel {
+    background-color: #6c757d;
+    color: white;
+    font-size: 8px;
+}
+
+.btnEdit {
+    background-color: #ffc107;
+    color: black;
+    font-size: 8px;
+}
+
+.btnDelete {
+    background-color: #dc3545;
+    color: white;
+    font-size: 8px;
+}
+
+table {
+    flex: 1;
+    min-width: 500px;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.thRow {
+    background-color: #343a40;
+}
+
+th {
+    padding: 12px;
+    text-align: left;
+    color: white;
+    font-size: 14px;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+td {
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.idCell {
+    font-family: monospace;
+    font-size: 12px;
+    color: #666;
+    font-weight: bold;
+}
+
+.emptyCell {
+    padding: 20px;
+    text-align: center;
+    color: #888;
+    font-style: italic;
+}
