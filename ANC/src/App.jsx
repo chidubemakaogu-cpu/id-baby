@@ -1,7 +1,8 @@
 import Nav from "./components/Nav";
 import Form from "./components/Form";
 import {form} from "./components/Form";
-import IDCard from "./components/IDCard"
+import DataCollector from "./components/DataCollector";
+import StudentForm from "./components/StudentForm";
 import "./app.css";
 
 function App() {
@@ -21,7 +22,8 @@ function App() {
         Weight="53"
         SCHOOL="Kapna International"
         />
-      <IDCard/>
+      <DataCollector />
+      <StudentForm />
     </div>
   )
 }

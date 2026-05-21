@@ -8,7 +8,7 @@ function Invent() {
 }
 
 function IDCard() {
-    // 1. STATE INITIALIZATION         FUCK U
+    // 1. STATE INITIALIZATION         
     const [records, setRecords] = useState(() => {
         const saved = localStorage.getItem('studentRecords');
         return saved ? JSON.parse(saved) : [];
@@ -21,7 +21,7 @@ function IDCard() {
     const [editingId, setEditingId] = useState(null);
     const [searchTerm, setSearchTerm] = useState('');
 
-    // Save changes automatically to persistent LocalStorage
+    // Save changes automatically to persistent LocalStorage to save records across sessions
     useEffect(() => {
         localStorage.setItem('studentRecords', JSON.stringify(records));
     }, [records]);
