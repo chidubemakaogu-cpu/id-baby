@@ -34,7 +34,7 @@ function DataCollector() {
       <ul>
         {savedData.map((item) => (
           <li key={item.id}>
-            <strong>ID:</strong> {item.id} - <strong>Data:</strong> {item.content}
+            <strong>ID:</strong>  - <strong>Data:</strong> {item.content}
           </li>
         ))}
       </ul>

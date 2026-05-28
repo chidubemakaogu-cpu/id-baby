@@ -1,12 +1,7 @@
 import React, { useState } from 'react';
 
 function StudentForm() {
-  const [student, setStudent] = useState({
-    name: '',
-    age: '',
-    gender: '',
-    grade: ''
-  });
+  const [student, setStudent] = useState({ name: '', age: '', gender: '', grade: '' });
   const [studentsList, setStudentsList] = useState([]);
 
   // Updates state dynamically as the user types
@@ -17,25 +12,23 @@ function StudentForm() {
   // Handles form submission, generates a unique ID, and saves the data
   const handleSubmit = (e) => {
     e.preventDefault();
-    
-    // Check if fields are empty
     if (!student.name || !student.age || !student.gender || !student.grade) return;
-
+    
     const newStudent = {
       id: crypto.randomUUID(), // Generates a unique ID
       ...student
     };
-
+    
     // Save to the list
     setStudentsList([...studentsList, newStudent]);
-
+    
     // Reset form
     setStudent({ name: '', age: '', gender: '', grade: '' });
   };
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} style={{ marginBottom: '20px' }}>
         <input name="name" value={student.name} onChange={handleChange} placeholder="Name" required />
         <input name="age" type="number" value={student.age} onChange={handleChange} placeholder="Age" required />
         <input name="gender" value={student.gender} onChange={handleChange} placeholder="Gender" required />
@@ -43,15 +36,30 @@ function StudentForm() {
         <button type="submit">Save Student</button>
       </form>
 
-      {/* Display Saved Students */}
-      <ul>
+      {/* Display Saved Students in Cards */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '15px' }}>
         {studentsList.map((s) => (
-          <li key={s.id}>
-            <strong>ID:</strong> {s.id} | <strong>Name:</strong> {s.name} | <strong>Age:</strong> {s.age} | <strong>Gender:</strong> {s.gender} | <strong>Grade:</strong> {s.grade}
-          </li>
+          <div 
+            key={s.id} 
+            style={{
+              border: '2px solid #ccc',
+              borderRadius: '8px',
+              padding: '15px',
+              boxShadow: '0 2px 5px rgba(0,0,0,0.1)',
+              backgroundColor: '#f9f9f9',
+              justifyContent: 'center',
+            }}
+          >
+            <strong>ID:</strong> <br />
+            <strong>Name:</strong> {s.name}<br />
+            <strong>Age:</strong> {s.age}<br />
+            <strong>Gender:</strong> {s.gender}<br />
+            <strong>Grade:</strong> {s.grade}
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 }
+
 export default StudentForm;
